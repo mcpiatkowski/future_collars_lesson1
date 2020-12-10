@@ -8,10 +8,7 @@ refren2.txt
 
 zwrotka3.txt
 
-Ref.: Hej, ha! Kolejkę nalej!
-Hej, ha! Kielichy wznieśmy!
-To zrobi doskonale
-Morskim opowieściom.
+refren3.txt
 
 Może ktoś się będzie zżymał
 Mówiąc, że to zdrożne wieści,
