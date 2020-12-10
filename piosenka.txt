@@ -4,10 +4,7 @@ refren1.txt
 
 zwrotka2.txt
 
-Ref.: Hej, ha! Kolejkę nalej!
-Hej, ha! Kielichy wznieśmy!
-To zrobi doskonale
-Morskim opowieściom.
+refren2.txt
 
 Jak pod Helem raz dmuchnęło,
 Żagle zdarła moc nadludzka,
