@@ -1,9 +1,6 @@
 zwrotka1.txt
 
-Ref.: Hej, ha! Kolejkę nalej!
-Hej, ha! Kielichy wznieśmy!
-To zrobi doskonale
-Morskim opowieściom.
+refren1.txt
 
 Pływał raz marynarz, który
 Żywił się wyłącznie pieprzem,
