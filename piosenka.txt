@@ -6,10 +6,7 @@ zwrotka2.txt
 
 refren2.txt
 
-Jak pod Helem raz dmuchnęło,
-Żagle zdarła moc nadludzka,
-Patrzę – w koję mi przywiało
-Nagą babkę z Pucka.
+zwrotka3.txt
 
 Ref.: Hej, ha! Kolejkę nalej!
 Hej, ha! Kielichy wznieśmy!
