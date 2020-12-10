@@ -10,7 +10,4 @@ zwrotka3.txt
 
 refren3.txt
 
-Może ktoś się będzie zżymał
-Mówiąc, że to zdrożne wieści,
-Ale to jest właśnie klimat
-Morskich opowieści.
+zwrotka4.txt
