@@ -1,0 +1,400 @@
+$ git log
+commit 6b4ecb41a9ac7a0dbb2255139128dd50badb383e (HEAD -> master)
+Author: Michał Piątkowski <mcpiatkowski@gmail.com>
+Date:   Thu Dec 10 11:46:08 2020 +0100
+
+    tylko jeden refren
+
+commit 19358e0641e0b089861c9aa055425491b131cc03
+Author: Michał Piątkowski <mcpiatkowski@gmail.com>
+Date:   Thu Dec 10 11:38:53 2020 +0100
+
+    Revert "usunięcie linii z refrenu"
+
+    This reverts commit b9e3fb9dd0517256fa19dce14bd2502bc4e69d63.
+
+    przywrócenie linii do refrenu
+
+commit b9e3fb9dd0517256fa19dce14bd2502bc4e69d63
+Author: Michał Piątkowski <mcpiatkowski@gmail.com>
+Date:   Thu Dec 10 11:37:57 2020 +0100
+
+    usunięcie linii z refrenu
+
+commit 092a2d2786196465383bb3bbb597b55efcd7e21c
+Author: Michał Piątkowski <mcpiatkowski@gmail.com>
+Date:   Thu Dec 10 11:30:59 2020 +0100
+
+    czwarta zwrotka
+
+commit fbef14d2d1c50c4febb13e376fa42cabc109b2f5
+Author: Michał Piątkowski <mcpiatkowski@gmail.com>
+Date:   Thu Dec 10 11:29:16 2020 +0100
+
+    trzeci refren
+
+commit 9af6ea232254f770a2bd3c8fae3c36d3b7f75c7a
+Author: Michał Piątkowski <mcpiatkowski@gmail.com>
+Date:   Thu Dec 10 11:25:44 2020 +0100
+
+    trzecia zwrotka
+
+commit b40c7195e731913717aee12dccd830e292435046
+Author: Michał Piątkowski <mcpiatkowski@gmail.com>
+Date:   Thu Dec 10 11:23:29 2020 +0100
+
+    drugi refren
+
+commit cfb5cde77b38e49e2bc60bceb9a75381f627c3e2
+Author: Michał Piątkowski <mcpiatkowski@gmail.com>
+Date:   Thu Dec 10 11:21:50 2020 +0100
+
+    druga zwrotka
+
+commit 9d94596fdca650ac27b9f87a82a949bb64a828e0
+Author: Michał Piątkowski <mcpiatkowski@gmail.com>
+Date:   Thu Dec 10 11:19:45 2020 +0100
+
+    pierwszy refren
+
+commit 5ffacbd967679c4026c79b1a4523d910c43407d8
+Author: Michał Piątkowski <mcpiatkowski@gmail.com>
+Date:   Thu Dec 10 11:17:21 2020 +0100
+
+    pierwsza zwrotka
+
+commit bf1beb43b890253c23cd336a51eef5f5ef4200e4
+Author: Michał Piątkowski <mcpiatkowski@gmail.com>
+Date:   Thu Dec 10 11:13:16 2020 +0100
+
+    nowa piosenka
+
+
+$ git log -p piosenka.txt
+commit 6b4ecb41a9ac7a0dbb2255139128dd50badb383e (HEAD -> master)
+Author: Michał Piątkowski <mcpiatkowski@gmail.com>
+Date:   Thu Dec 10 11:46:08 2020 +0100
+
+    tylko jeden refren
+
+diff --git a/piosenka.txt b/piosenka.txt
+index ae271b3..a9fdddb 100644
+--- a/piosenka.txt
++++ b/piosenka.txt
+@@ -1,13 +1,13 @@
+ zwrotka1.txt
+
+-refren1.txt
++refren.txt
+
+ zwrotka2.txt
+
+-refren2.txt
++refren.txt
+
+ zwrotka3.txt
+
+-refren3.txt
++refren.txt
+
+ zwrotka4.txt
+
+commit 092a2d2786196465383bb3bbb597b55efcd7e21c
+Author: Michał Piątkowski <mcpiatkowski@gmail.com>
+Date:   Thu Dec 10 11:30:59 2020 +0100
+
+    czwarta zwrotka
+
+diff --git a/piosenka.txt b/piosenka.txt
+index 9c6e2a5..ae271b3 100644
+--- a/piosenka.txt
++++ b/piosenka.txt
+@@ -10,7 +10,4 @@ zwrotka3.txt
+
+ refren3.txt
+
+-Może ktoś się będzie zżymał
+-Mówiąc, że to zdrożne wieści,
+-Ale to jest właśnie klimat
+-Morskich opowieści.
++zwrotka4.txt
+
+commit fbef14d2d1c50c4febb13e376fa42cabc109b2f5
+Author: Michał Piątkowski <mcpiatkowski@gmail.com>
+Date:   Thu Dec 10 11:29:16 2020 +0100
+
+    trzeci refren
+
+diff --git a/piosenka.txt b/piosenka.txt
+index c6419c3..9c6e2a5 100644
+--- a/piosenka.txt
++++ b/piosenka.txt
+@@ -8,12 +8,9 @@ refren2.txt
+
+ zwrotka3.txt
+
+-Ref.: Hej, ha! Kolejkę nalej!
+-Hej, ha! Kielichy wznieśmy!
+-To zrobi doskonale
+-Morskim opowieściom.
++refren3.txt
+
+ Może ktoś się będzie zżymał
+ Mówiąc, że to zdrożne wieści,
+ Ale to jest właśnie klimat
+-Morskich opowieści.
+\ No newline at end of file
++Morskich opowieści.
+
+commit 9af6ea232254f770a2bd3c8fae3c36d3b7f75c7a
+Author: Michał Piątkowski <mcpiatkowski@gmail.com>
+Date:   Thu Dec 10 11:25:44 2020 +0100
+
+    trzecia zwrotka
+
+diff --git a/piosenka.txt b/piosenka.txt
+index a1d6651..c6419c3 100644
+--- a/piosenka.txt
++++ b/piosenka.txt
+@@ -6,10 +6,7 @@ zwrotka2.txt
+
+ refren2.txt
+
+-Jak pod Helem raz dmuchnęło,
+-Żagle zdarła moc nadludzka,
+-Patrzę – w koję mi przywiało
+-Nagą babkę z Pucka.
++zwrotka3.txt
+
+ Ref.: Hej, ha! Kolejkę nalej!
+ Hej, ha! Kielichy wznieśmy!
+
+commit b40c7195e731913717aee12dccd830e292435046
+Author: Michał Piątkowski <mcpiatkowski@gmail.com>
+Date:   Thu Dec 10 11:23:29 2020 +0100
+
+    drugi refren
+
+diff --git a/piosenka.txt b/piosenka.txt
+index 2c5c9f9..a1d6651 100644
+--- a/piosenka.txt
++++ b/piosenka.txt
+@@ -4,10 +4,7 @@ refren1.txt
+
+ zwrotka2.txt
+
+-Ref.: Hej, ha! Kolejkę nalej!
+-Hej, ha! Kielichy wznieśmy!
+-To zrobi doskonale
+-Morskim opowieściom.
++refren2.txt
+
+ Jak pod Helem raz dmuchnęło,
+ Żagle zdarła moc nadludzka,
+
+commit cfb5cde77b38e49e2bc60bceb9a75381f627c3e2
+Author: Michał Piątkowski <mcpiatkowski@gmail.com>
+Date:   Thu Dec 10 11:21:50 2020 +0100
+
+    druga zwrotka
+
+diff --git a/piosenka.txt b/piosenka.txt
+index 808df0c..2c5c9f9 100644
+--- a/piosenka.txt
++++ b/piosenka.txt
+@@ -2,10 +2,7 @@ zwrotka1.txt
+
+ refren1.txt
+
+-Pływał raz marynarz, który
+-Żywił się wyłącznie pieprzem,
+-Sypał pieprz do konfitury
+-I do zupy mlecznej.
++zwrotka2.txt
+
+ Ref.: Hej, ha! Kolejkę nalej!
+ Hej, ha! Kielichy wznieśmy!
+
+commit 9d94596fdca650ac27b9f87a82a949bb64a828e0
+Author: Michał Piątkowski <mcpiatkowski@gmail.com>
+Date:   Thu Dec 10 11:19:45 2020 +0100
+
+    pierwszy refren
+
+diff --git a/piosenka.txt b/piosenka.txt
+index ffea7bf..808df0c 100644
+--- a/piosenka.txt
++++ b/piosenka.txt
+@@ -1,9 +1,6 @@
+ zwrotka1.txt
+
+-Ref.: Hej, ha! Kolejkę nalej!
+-Hej, ha! Kielichy wznieśmy!
+-To zrobi doskonale
+-Morskim opowieściom.
++refren1.txt
+
+ Pływał raz marynarz, który
+ Żywił się wyłącznie pieprzem,
+
+commit 5ffacbd967679c4026c79b1a4523d910c43407d8
+Author: Michał Piątkowski <mcpiatkowski@gmail.com>
+Date:   Thu Dec 10 11:17:21 2020 +0100
+
+    pierwsza zwrotka
+
+diff --git a/piosenka.txt b/piosenka.txt
+index 592f1f1..ffea7bf 100644
+--- a/piosenka.txt
++++ b/piosenka.txt
+@@ -1,7 +1,4 @@
+-Kiedy rum zaszumi w głowie
+-Cały świat nabiera treści
+-Wtedy chętnie słucha człowiek
+-Morskich opowieści.
++zwrotka1.txt
+
+ Ref.: Hej, ha! Kolejkę nalej!
+ Hej, ha! Kielichy wznieśmy!
+
+commit bf1beb43b890253c23cd336a51eef5f5ef4200e4
+Author: Michał Piątkowski <mcpiatkowski@gmail.com>
+Date:   Thu Dec 10 11:13:16 2020 +0100
+
+    nowa piosenka
+
+diff --git a/piosenka.txt b/piosenka.txt
+new file mode 100644
+index 0000000..592f1f1
+--- /dev/null
++++ b/piosenka.txt
+@@ -0,0 +1,34 @@
++Kiedy rum zaszumi w głowie
++Cały świat nabiera treści
++Wtedy chętnie słucha człowiek
++Morskich opowieści.
++
++Ref.: Hej, ha! Kolejkę nalej!
++Hej, ha! Kielichy wznieśmy!
++To zrobi doskonale
++Morskim opowieściom.
++
++Pływał raz marynarz, który
++Żywił się wyłącznie pieprzem,
++Sypał pieprz do konfitury
++I do zupy mlecznej.
++
++Ref.: Hej, ha! Kolejkę nalej!
++Hej, ha! Kielichy wznieśmy!
++To zrobi doskonale
++Morskim opowieściom.
++
++Jak pod Helem raz dmuchnęło,
++Żagle zdarła moc nadludzka,
++Patrzę – w koję mi przywiało
++Nagą babkę z Pucka.
++
++Ref.: Hej, ha! Kolejkę nalej!
++Hej, ha! Kielichy wznieśmy!
++To zrobi doskonale
++Morskim opowieściom.
++
++Może ktoś się będzie zżymał
++Mówiąc, że to zdrożne wieści,
++Ale to jest właśnie klimat
++Morskich opowieści.
+
+
+$ git log -p refren.txt
+commit 6b4ecb41a9ac7a0dbb2255139128dd50badb383e (HEAD -> master)
+Author: Michał Piątkowski <mcpiatkowski@gmail.com>
+Date:   Thu Dec 10 11:46:08 2020 +0100
+
+    tylko jeden refren
+
+diff --git a/refren.txt b/refren.txt
+new file mode 100644
+index 0000000..9239af6
+--- /dev/null
++++ b/refren.txt
+@@ -0,0 +1,4 @@
++Ref.: Hej, ha! Kolejkę nalej!
++Hej, ha! Kielichy wznieśmy!
++To zrobi doskonale
++Morskim opowieściom.
+
+
+$ git log -p zwrotka1.txt
+commit 5ffacbd967679c4026c79b1a4523d910c43407d8
+Author: Michał Piątkowski <mcpiatkowski@gmail.com>
+Date:   Thu Dec 10 11:17:21 2020 +0100
+
+    pierwsza zwrotka
+
+diff --git a/zwrotka1.txt b/zwrotka1.txt
+new file mode 100644
+index 0000000..33d9933
+--- /dev/null
++++ b/zwrotka1.txt
+@@ -0,0 +1,4 @@
++Kiedy rum zaszumi w głowie
++Cały świat nabiera treści
++Wtedy chętnie słucha człowiek
++Morskich opowieści.
+
+
+$ git log -p zwrotka2.txt
+commit cfb5cde77b38e49e2bc60bceb9a75381f627c3e2
+Author: Michał Piątkowski <mcpiatkowski@gmail.com>
+Date:   Thu Dec 10 11:21:50 2020 +0100
+
+    druga zwrotka
+
+diff --git a/zwrotka2.txt b/zwrotka2.txt
+new file mode 100644
+index 0000000..dbfe165
+--- /dev/null
++++ b/zwrotka2.txt
+@@ -0,0 +1,4 @@
++Pływał raz marynarz, który
++Żywił się wyłącznie pieprzem,
++Sypał pieprz do konfitury
++I do zupy mlecznej.
+
+
+$ git log -p zwrotka3.txt
+commit 9af6ea232254f770a2bd3c8fae3c36d3b7f75c7a
+Author: Michał Piątkowski <mcpiatkowski@gmail.com>
+Date:   Thu Dec 10 11:25:44 2020 +0100
+
+    trzecia zwrotka
+
+diff --git a/zwrotka3.txt b/zwrotka3.txt
+new file mode 100644
+index 0000000..5d50d96
+--- /dev/null
++++ b/zwrotka3.txt
+@@ -0,0 +1,4 @@
++Jak pod Helem raz dmuchnęło,
++Żagle zdarła moc nadludzka,
++Patrzę – w koję mi przywiało
++Nagą babkę z Pucka.
+
+
+$ git log -p zwrotka4.txt
+commit 092a2d2786196465383bb3bbb597b55efcd7e21c
+Author: Michał Piątkowski <mcpiatkowski@gmail.com>
+Date:   Thu Dec 10 11:30:59 2020 +0100
+
+    czwarta zwrotka
+
+diff --git a/zwrotka4.txt b/zwrotka4.txt
+new file mode 100644
+index 0000000..7f4975a
+--- /dev/null
++++ b/zwrotka4.txt
+@@ -0,0 +1,4 @@
++Może ktoś się będzie zżymał
++Mówiąc, że to zdrożne wieści,
++Ale to jest właśnie klimat
++Morskich opowieści.
